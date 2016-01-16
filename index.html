@@ -8,36 +8,17 @@ Winter 2016
 -->
 <!--*************************************************************************-->
 <html>
-	<style type="text/css">
-		.border,th,td{
-			border-style: solid; 
-			border-width: 1px
-		}
-		body {
-			background-color: #eeeeee;
-		}
-		h1,h2,h3,h4,h5,h6 {
-			color: #555555;
-		}
-		tr:nth-child(odd){
-			background-color:yellow;
-		}
-		tr:nth-child(even){
-			background-color:orange;
-		}
-		
-		
-	</style>
 	<head>
-		<title>my first page</title>
+		<link rel="stylesheet" type="text/css" href="styles.css"/>
+		<title>Matt's Homepage</title>
 	</head>
 	<body>
 		<h1>Matthew Bolin</h1>
 		<hr/>
 		<h3>About Me</h3>
-		<div style="float:left" class="border">
-			<img style="width:300px; float: left; margin: 5px"src="group.jpg"/>
-			<p>
+		<div class="border about-me">
+			<img class="group-image"src="group.jpg"/>
+			<p class="about-me-font">
 				My name is Matthew <strong>"Chewy"</strong> Bolin. You might be 
 				wondering at this point how I earned that nickname. Long Story 
 				short <strong>I have Wookie strength and it is always best to 
@@ -55,77 +36,74 @@ Winter 2016
 				get my parking pass I will be set.
 			</p>
 		</div>
-		
-		
 		<div>
-		<hr/>
-		<h3>Courses I'm taking</h3>
-		<table class="border">
-			<tr>
-				<th>Name of class</th>
-				<th>Course #</th>
-				<th>Days Meeting</th>
-				<th>Start time</th>
-				<th>End time</th>
-				<th>Instructor</th>
-				<th>Room #</th>
-			</tr>
-			<tr>
-				<td>Computer Organization I</td>
-				<td>
-					<a href="http://catalog.emich.edu/preview_course_nopop.
-					php?catoid=18&coid=140516">
-						COSC 221
-					</a>
-				</td>
-				<td style="text-align: center;">M & W</td>
-				<td>10:00 am</td>
-				<td>11:50 am</td>
-				<td>Khaled Mansour</td>
-				<td>PH 520</td>
-			</tr>
-			<tr>
-				<td>Internet Based Computing</td>
-				<td>
-					<a href="http://catalog.emich.edu/preview_course_nopop.
-					php?catoid=18&coid=140517">
-						COSC 231
-					</a>
-				</td>
-				<td style="text-align: center;">M & W</td>
-				<td>7:20 pm</td>
-				<td>8:35 pm</td>
-				<td>Edward Gurnee</td>
-				<td>PH 503</td>
-			</tr>
-		</table>
-		<hr/>
-		<h3>My list of top 4 Marvel Villains</h3>
-		<ol>
-			<li>
-				can I count Deadpool?
-				<span style="background-color: yellow;
-							 border-style: ridge;
-							 border-width: 2px">
-					I think he will accept it, a Chimichanga sounds
-					good right about now.
-				</span>
-			</li>
-			<li>The Phoenix</li>
-			<li>Thanos</li>
-			<li>Venom</li>
-			<li>Dr. Doom</li>
-		</ol>
-		<hr/>
-		<a href="https://www.google.com/search?q=cats&biw=1653&bih
-		=922&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiEwLSoi6PKAhWITS
-		YKHX76ChgQ_AUIBigB">
-			<img src="kitty.jpg" width="300px"/>
-		</a>
-		<p>
-			goto my 
-			<a href="http://people.emich.edu/mbolin1/231">231 directory </a>
-		</p>
+			<h3>Courses I'm taking</h3>
+			<table class="border">
+				<tr>
+					<th>Name of class</th>
+					<th>Course #</th>
+					<th>Days Meeting</th>
+					<th>Start time</th>
+					<th>End time</th>
+					<th>Instructor</th>
+					<th>Room #</th>
+				</tr>
+				<tr>
+					<td>Computer Organization I</td>
+					<td>
+						<a href="http://catalog.emich.edu/preview_course_nopop.
+						php?catoid=18&coid=140516">
+							COSC 221
+						</a>
+					</td>
+					<td class="sched-center">M & W</td>
+					<td>10:00 am</td>
+					<td>11:50 am</td>
+					<td>Khaled Mansour</td>
+					<td>PH 520</td>
+				</tr>
+				<tr>
+					<td>Internet Based Computing</td>
+					<td>
+						<a href="http://catalog.emich.edu/preview_course_nopop.
+						php?catoid=18&coid=140517">
+							COSC 231
+						</a>
+					</td>
+					<td class="sched-center">M & W</td>
+					<td>7:20 pm</td>
+					<td>8:35 pm</td>
+					<td>Edward Gurnee</td>
+					<td>PH 503</td>
+				</tr>
+			</table>
+			<hr/>
+			<h3>My list of top 4 Marvel Villains</h3>
+			<ol>
+				<li>
+					can I count Deadpool?
+					<span class="dpl-background-color">
+						I think he will accept it, a Chimichanga sounds
+						good right about now.
+					</span>
+				</li>
+				<li>The Phoenix</li>
+				<li>Thanos</li>
+				<li>Venom</li>
+				<li>Dr. Doom</li>
+			</ol>
+			<hr/>
+			<a href="https://www.google.com/search?q=cats&biw=1653&bih
+			=922&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiEwLSoi6PKAhWITS
+			YKHX76ChgQ_AUIBigB">
+				<img src="kitty.jpg" width="300px"/>
+			</a>
+			<p>
+				goto my 
+				<a href="http://people.emich.edu/mbolin1/231">
+					231 directory
+				</a>
+			</p>
 		</div>
 	</body>
 </html>
